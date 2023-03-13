@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aleksandra's calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Your BMI Calculator</h1>
+      </div>
+
+      <div class="columnContainer">
+        <!--Column left= moduł wpisywania parametrów-->
+        <div class="columnLeft">
+          <h2 class="heads">Data entry</h2>
+          <p class="txtForP">Enter your data to make your BMI calculations</p>
+
+          <p class="txtAboveHeightInput">Your height</p>
+          <div class="inputHandH">
+            
+            <form>
+            <input
+              type="number"
+              id="height"
+              placeholder="numbers from 120 to 240"
+              required
+            />
+          </div>
+
+          <p class="txtAboveWeightInput">Your weight</p>
+          <div class="inputHandW">
+            <input
+              type="number"
+              id="weight"
+              placeholder="numbers from 40 to 200"
+              required
+            />
+          
+          </div>
+
+          <button type="reset" class="btn" id="submit">Submit</button>
+        </form>
+
+        </div>
+
+        <!--Column Middle= moduł wyświetlania wyników-->
+        <div class="columnMiddle">
+          <h2 class="heads">Your results</h2>
+          <div id="details"></div>
+                 <p class="txtAlerts" id="outputAlert"></p>
+                <p class="txtListHeight" id="outputHeight"></p>
+                <p class="txtListWeight" id="outputWeight"></p>
+    
+
+<div class="boxForBMIresult">
+            <h2 class="BMIhead">Your BMI is:</h2>
+            <div class="BMIbox" id="outputDodawanko"> </div>
+          </div>
+          <p id="outputAlertSecond"> </p>
+        </div>
+
+          <!--Column Right= moduł wyświetlania historii pomiarów-->
+          <div class="columnRight">
+            <h2 class="heads">Results history</h2>
+            <div class="resultsHistory">
+                <button onclick="clearLocalStorage()" class="clearbtn">Clear your history</button>
+                <p id="resultsfirst"></p>
+              <p id="results"></p>
+              <p id="average"></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
