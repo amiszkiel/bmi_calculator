@@ -1,2 +1,3 @@
 # bmi_calculator
-Postgraduate studies exercises - application counts BMI of user (JavaScript web app) 🌐
+Postgraduate studies exercise - application counts BMI of user (JavaScript web app) 🌐
+The application was written by me from scratch. 
